@@ -2,6 +2,11 @@
 
 @section('content')
     <div class="container">
+        @if($edit === FALSE)
+            {{ Breadcrumbs::render('answer.create', $question) }}
+        @else()
+            {{ Breadcrumbs::render('answer.edit', $question, $answer) }}
+        @endif
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">

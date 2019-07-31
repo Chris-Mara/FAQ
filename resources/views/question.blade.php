@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+        {{ Breadcrumbs::render('question.show', $question->id) }}
         <div class="row ">
             <div class="col-md-8">
                 <div class="card">
